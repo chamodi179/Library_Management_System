@@ -197,6 +197,11 @@ public class Return extends javax.swing.JFrame {
 
         backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
         backBtn.setText("Back");
+        backBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backBtnActionPerformed(evt);
+            }
+        });
         jPanel2.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 460, -1, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 530));
@@ -230,6 +235,12 @@ public class Return extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_searchBtnActionPerformed
+
+    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+        setVisible(false);
+        Home homePage = new Home();
+        homePage.setVisible(true);
+    }//GEN-LAST:event_backBtnActionPerformed
 
     
     public static void main(String args[]) {
