@@ -1,9 +1,19 @@
 
+import java.awt.HeadlessException;
+import java.sql.*;
+import javax.swing.JOptionPane;
+//import javax.swing.JTextField;
+
 public class Return extends javax.swing.JFrame {
 
+    Connection conn;
+    ResultSet rs;
+    PreparedStatement pst;
     
     public Return() {
+        super("Return Book");
         initComponents();
+        conn = JavaConnect.connectDb();
     }
 
     
