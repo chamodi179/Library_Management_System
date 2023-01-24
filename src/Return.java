@@ -100,23 +100,23 @@ public class Return extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
         jLabel7.getAccessibleContext().setAccessibleDescription("");
 
-        fathersNameBox.setEnabled(false);
+        fathersNameBox.setEditable(false);
         jPanel1.add(fathersNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 150, -1));
 
-        studentNameBox.setEnabled(false);
+        studentNameBox.setEditable(false);
         jPanel1.add(studentNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 150, -1));
         jPanel1.add(studentIdBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 150, -1));
 
-        courseBox.setEnabled(false);
+        courseBox.setEditable(false);
         jPanel1.add(courseBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 150, -1));
 
-        branchBox.setEnabled(false);
+        branchBox.setEditable(false);
         jPanel1.add(branchBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 150, -1));
 
-        yearBox.setEnabled(false);
+        yearBox.setEditable(false);
         jPanel1.add(yearBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 150, -1));
 
-        semesterBox.setEnabled(false);
+        semesterBox.setEditable(false);
         jPanel1.add(semesterBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 150, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -125,6 +125,11 @@ public class Return extends javax.swing.JFrame {
 
         searchBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\search.png")); // NOI18N
         searchBtn.setText("Search");
+        searchBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchBtnActionPerformed(evt);
+            }
+        });
         jPanel1.add(searchBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -151,32 +156,32 @@ public class Return extends javax.swing.JFrame {
         jLabel14.setText("Date of issue :");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, -1, -1));
 
+        dateOfIssueBox.setEditable(false);
         dateOfIssueBox.setToolTipText("");
-        dateOfIssueBox.setEnabled(false);
         jPanel1.add(dateOfIssueBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, 150, -1));
 
+        bookIdBox.setEditable(false);
         bookIdBox.setToolTipText("");
-        bookIdBox.setEnabled(false);
         jPanel1.add(bookIdBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, 150, -1));
 
+        bookNameBox.setEditable(false);
         bookNameBox.setToolTipText("");
-        bookNameBox.setEnabled(false);
         jPanel1.add(bookNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 100, 150, -1));
 
+        editionBox.setEditable(false);
         editionBox.setToolTipText("");
-        editionBox.setEnabled(false);
         jPanel1.add(editionBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 150, -1));
 
+        publisherBox.setEditable(false);
         publisherBox.setToolTipText("");
-        publisherBox.setEnabled(false);
         jPanel1.add(publisherBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 150, -1));
 
+        priceBox.setEditable(false);
         priceBox.setToolTipText("");
-        priceBox.setEnabled(false);
         jPanel1.add(priceBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 150, -1));
 
+        pagesBox.setEditable(false);
         pagesBox.setToolTipText("");
-        pagesBox.setEnabled(false);
         jPanel1.add(pagesBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, 150, -1));
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 770, 360));
@@ -198,6 +203,33 @@ public class Return extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+        String sql = "SELECT * FROM Issue WHERE StudentId=?";
+        try {
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, studentIdBox.getText());
+            rs = pst.executeQuery();
+            if (rs.next()) {
+                studentNameBox.setText(rs.getString("StudentName"));
+                fathersNameBox.setText(rs.getString("FathersName"));
+                courseBox.setText(rs.getString("Course"));
+                branchBox.setText(rs.getString("Branch"));
+                yearBox.setText(rs.getString("Year"));
+                semesterBox.setText(rs.getString("Semester"));
+                bookIdBox.setText(rs.getString("BookId"));
+                bookNameBox.setText(rs.getString("BookName"));
+                editionBox.setText(rs.getString("Edition"));
+                publisherBox.setText(rs.getString("Publisher"));
+                priceBox.setText(rs.getString("Price"));
+                pagesBox.setText(rs.getString("Pages"));
+                dateOfIssueBox.setText(rs.getString("issueDate"));
+            }
+            
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_searchBtnActionPerformed
 
     
     public static void main(String args[]) {
