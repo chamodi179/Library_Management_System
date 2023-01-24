@@ -90,12 +90,23 @@ public class Return extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
         jLabel7.getAccessibleContext().setAccessibleDescription("");
 
+        fathersNameBox.setEnabled(false);
         jPanel1.add(fathersNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 150, -1));
+
+        studentNameBox.setEnabled(false);
         jPanel1.add(studentNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 150, -1));
         jPanel1.add(studentIdBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 150, -1));
+
+        courseBox.setEnabled(false);
         jPanel1.add(courseBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 150, -1));
+
+        branchBox.setEnabled(false);
         jPanel1.add(branchBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 150, -1));
+
+        yearBox.setEnabled(false);
         jPanel1.add(yearBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 150, -1));
+
+        semesterBox.setEnabled(false);
         jPanel1.add(semesterBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 150, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -131,24 +142,31 @@ public class Return extends javax.swing.JFrame {
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, -1, -1));
 
         dateOfIssueBox.setToolTipText("");
+        dateOfIssueBox.setEnabled(false);
         jPanel1.add(dateOfIssueBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, 150, -1));
 
         bookIdBox.setToolTipText("");
+        bookIdBox.setEnabled(false);
         jPanel1.add(bookIdBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 60, 150, -1));
 
         bookNameBox.setToolTipText("");
+        bookNameBox.setEnabled(false);
         jPanel1.add(bookNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 100, 150, -1));
 
         editionBox.setToolTipText("");
+        editionBox.setEnabled(false);
         jPanel1.add(editionBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 150, -1));
 
         publisherBox.setToolTipText("");
+        publisherBox.setEnabled(false);
         jPanel1.add(publisherBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 150, -1));
 
         priceBox.setToolTipText("");
+        priceBox.setEnabled(false);
         jPanel1.add(priceBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 150, -1));
 
         pagesBox.setToolTipText("");
+        pagesBox.setEnabled(false);
         jPanel1.add(pagesBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, 150, -1));
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 770, 360));
