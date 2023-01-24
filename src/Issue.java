@@ -133,7 +133,6 @@ public class Issue extends javax.swing.JFrame {
         pagesBox.setEditable(false);
         jPanel2.add(pagesBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, 150, -1));
 
-        bookDetailsSearchBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\search.png")); // NOI18N
         bookDetailsSearchBtn.setText("Search");
         bookDetailsSearchBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +177,6 @@ public class Issue extends javax.swing.JFrame {
         fathersNameBox.setEditable(false);
         jPanel3.add(fathersNameBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 150, -1));
 
-        studentDetailsSearchBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\search.png")); // NOI18N
         studentDetailsSearchBtn.setText("Search");
         studentDetailsSearchBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,7 +207,7 @@ public class Issue extends javax.swing.JFrame {
         jLabel14.setText("Date of Issue :");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 390, -1, -1));
 
-        issueBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\issue book2.png")); // NOI18N
+        issueBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\issue book2.png")); // NOI18N
         issueBtn.setText("Issue");
         issueBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +216,7 @@ public class Issue extends javax.swing.JFrame {
         });
         jPanel1.add(issueBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, -1, -1));
 
-        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
+        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
         backBtn.setText("Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

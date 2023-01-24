@@ -116,7 +116,7 @@ public class Student extends javax.swing.JFrame {
         semesterBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2" }));
         jPanel3.add(semesterBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 180, -1));
 
-        registerBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\register.png")); // NOI18N
+        registerBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\register.png")); // NOI18N
         registerBtn.setText("Register");
         registerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,7 +125,7 @@ public class Student extends javax.swing.JFrame {
         });
         jPanel3.add(registerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, -1, -1));
 
-        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
+        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
         backBtn.setText("Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

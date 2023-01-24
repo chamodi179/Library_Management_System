@@ -12,7 +12,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="Exit">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\exit.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\exit.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Exit"/>
               </Properties>
@@ -23,7 +23,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="logout">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\logout.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\logout.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Logout"/>
               </Properties>
@@ -41,7 +41,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="about">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\about.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\about.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="About"/>
               </Properties>
@@ -92,11 +92,6 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\library-management-system.png"/>
-            </Property>
-          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="20" y="20" width="-1" height="-1"/>
@@ -180,7 +175,7 @@
             <Component class="javax.swing.JButton" name="newBookBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\book item.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\book item.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -195,7 +190,7 @@
             <Component class="javax.swing.JButton" name="statisticsBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\statistics.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\statistics.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -203,14 +198,14 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="280" y="40" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="290" y="40" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
             <Component class="javax.swing.JButton" name="newUserBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\user.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\user.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -218,7 +213,7 @@
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="530" y="40" width="-1" height="-1"/>
+                  <AbsoluteConstraints x="540" y="40" width="-1" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -244,7 +239,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="310" y="150" width="60" height="-1"/>
+                  <AbsoluteConstraints x="320" y="150" width="60" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -257,7 +252,7 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="550" y="150" width="70" height="-1"/>
+                  <AbsoluteConstraints x="560" y="150" width="70" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -291,7 +286,7 @@
             <Component class="javax.swing.JButton" name="issueBookBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\issue book.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\issue book.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -306,7 +301,7 @@
             <Component class="javax.swing.JButton" name="returnBookBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\return book.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\return book.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -318,7 +313,7 @@
             <Component class="javax.swing.JButton" name="aboutBtn">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\about books.png"/>
+                  <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\about books.png"/>
                 </Property>
               </Properties>
               <Constraints>

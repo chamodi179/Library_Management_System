@@ -250,7 +250,7 @@
         <Component class="javax.swing.JButton" name="registerBtn">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\register.png"/>
+              <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\register.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Register"/>
           </Properties>
@@ -266,7 +266,7 @@
         <Component class="javax.swing.JButton" name="backBtn">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\HP\Documents\NetBeansProjects\LibrabyManagementSystem\images\back.png"/>
+              <Image iconType="2" name="C:\Users\HP\Documents\java-Project\LibrabyManagementSystem\images\back.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Back"/>
           </Properties>

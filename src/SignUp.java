@@ -82,8 +82,9 @@ public class SignUp extends javax.swing.JFrame {
         jPanel1.add(answerbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 180, -1));
         jPanel1.add(passwordbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 220, -1));
 
-        createbtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\create.png")); // NOI18N
+        createbtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\create.png")); // NOI18N
         createbtn.setText("Create");
+        createbtn.setPressedIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\create.png")); // NOI18N
         createbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createbtnActionPerformed(evt);
@@ -91,7 +92,7 @@ public class SignUp extends javax.swing.JFrame {
         });
         jPanel1.add(createbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, -1, -1));
 
-        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\NetBeansProjects\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
+        backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
         backBtn.setText("Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
