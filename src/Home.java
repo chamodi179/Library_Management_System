@@ -111,6 +111,11 @@ public class Home extends javax.swing.JFrame {
         jPanel3.add(issueBookBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         returnBookBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\return book.png")); // NOI18N
+        returnBookBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                returnBookBtnActionPerformed(evt);
+            }
+        });
         jPanel3.add(returnBookBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
 
         aboutBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\about books.png")); // NOI18N
@@ -208,6 +213,12 @@ public class Home extends javax.swing.JFrame {
         Issue issuePage = new Issue();
         issuePage.setVisible(true);
     }//GEN-LAST:event_issueBookBtnActionPerformed
+
+    private void returnBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnBookBtnActionPerformed
+        setVisible(false);
+        Return returnPage = new Return();
+        returnPage.setVisible(true);
+    }//GEN-LAST:event_returnBookBtnActionPerformed
 
     /**
      * @param args the command line arguments
