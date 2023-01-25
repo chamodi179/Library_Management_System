@@ -193,7 +193,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_logoutActionPerformed
 
     private void statisticsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statisticsBtnActionPerformed
-        // TODO add your handling code here:
+        setVisible(false);
+        Statistics statisticsPage = new Statistics();
+        statisticsPage.setVisible(true);
     }//GEN-LAST:event_statisticsBtnActionPerformed
 
     private void newBookBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newBookBtnActionPerformed
