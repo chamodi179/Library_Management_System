@@ -2,7 +2,8 @@
 import java.awt.HeadlessException;
 import java.sql.*;
 import javax.swing.JOptionPane;
-//import javax.swing.JTextField;
+import javax.swing.JTextField;
+import javax.swing.JTextField;
 
 public class Return extends javax.swing.JFrame {
 
@@ -16,6 +17,63 @@ public class Return extends javax.swing.JFrame {
         conn = JavaConnect.connectDb();
     }
 
+    public void delete(){
+        String sql = "delete from issue where StudentId = ?;";
+        try {
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, studentIdBox.getText());
+            pst.execute();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+    }
+    
+    public void returnUpdate(){
+        String sql = "INSERT INTO returnBook(StudentId,studentName,fathersName,course,branch,year,Semester,bookId,bookName,edition,publisher,price,pages,dateOfIssue,DateOfReturn) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        try {
+            pst = conn.prepareStatement(sql);
+            
+            pst.setString(1, studentIdBox.getText());
+            pst.setString(2, studentNameBox.getText());
+            pst.setString(3, fathersNameBox.getText());
+            pst.setString(4, courseBox.getText());
+            pst.setString(5, branchBox.getText());
+            pst.setString(6, yearBox.getText());
+            pst.setString(7, semesterBox.getText());
+            pst.setString(8, bookIdBox.getText());
+            pst.setString(9, bookNameBox.getText());
+            pst.setString(10, editionBox.getText());
+            pst.setString(11, publisherBox.getText());
+            pst.setString(12, priceBox.getText());
+            pst.setString(13, pagesBox.getText());
+            pst.setString(14, dateOfIssueBox.getText());
+            pst.setString(15, ((JTextField)returnDateBox.getDateEditor().getUiComponent()).getText());
+            
+            pst.execute();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }
+    
+    public void clear(){
+            studentIdBox.setText("");
+            studentNameBox.setText("");
+            fathersNameBox.setText("");
+            courseBox.setText("");
+            branchBox.setText("");
+            yearBox.setText("");
+            semesterBox.setText("");
+            bookIdBox.setText("");
+            bookNameBox.setText("");
+            editionBox.setText("");
+            publisherBox.setText("");
+            priceBox.setText("");
+            pagesBox.setText("");
+            dateOfIssueBox.setText("");
+            ((JTextField)returnDateBox.getDateEditor().getUiComponent()).setText("");
+         
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -189,10 +247,17 @@ public class Return extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel15.setText("Return Date :");
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, -1, -1));
+
+        returnDateBox.setDateFormatString("yyyy-mm-dd");
         jPanel2.add(returnDateBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, 150, -1));
 
         returnBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\return_icon.png")); // NOI18N
         returnBtn.setText("Return");
+        returnBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                returnBtnActionPerformed(evt);
+            }
+        });
         jPanel2.add(returnBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, -1, -1));
 
         backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
@@ -242,6 +307,13 @@ public class Return extends javax.swing.JFrame {
         homePage.setVisible(true);
     }//GEN-LAST:event_backBtnActionPerformed
 
+    private void returnBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnBtnActionPerformed
+        delete();
+        returnUpdate();
+        clear();
+        JOptionPane.showMessageDialog(null, "Return details updated successfully!");
+    }//GEN-LAST:event_returnBtnActionPerformed
+
     
     public static void main(String args[]) {
         
@@ -289,4 +361,6 @@ public class Return extends javax.swing.JFrame {
     private javax.swing.JTextField studentNameBox;
     private javax.swing.JTextField yearBox;
     // End of variables declaration//GEN-END:variables
+
+    
 }
