@@ -21,9 +21,12 @@ public class About extends javax.swing.JFrame {
         backBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(530, 370));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153)));
         jPanel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jPanel1.setMinimumSize(new java.awt.Dimension(530, 370));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\my png.png")); // NOI18N
@@ -48,12 +51,24 @@ public class About extends javax.swing.JFrame {
 
         backBtn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
         backBtn.setText("Back");
-        jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, -1, -1));
+        backBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backBtnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 370));
 
-        pack();
+        setSize(new java.awt.Dimension(552, 379));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+        setVisible(false);
+        Home homePage = new Home();
+        homePage.setVisible(true);
+    }//GEN-LAST:event_backBtnActionPerformed
 
     
     public static void main(String args[]) {
