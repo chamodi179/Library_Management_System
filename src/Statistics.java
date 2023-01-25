@@ -3,6 +3,7 @@ import java.awt.HeadlessException;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import net.proteanit.sql.DbUtils;
 
 public class Statistics extends javax.swing.JFrame {
 
@@ -14,8 +15,31 @@ public class Statistics extends javax.swing.JFrame {
         super("Ststistics");
         initComponents();
         conn = JavaConnect.connectDb();
+        issueDetails();
+        returnDetails();
     }
 
+    public void issueDetails(){
+        try {
+            String sql = "SELECT BookId,BookName,Edition,Publisher,Price,Pages FROM issue";
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery();
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }
+    
+    public void returnDetails(){
+        try {
+            String sql = "SELECT StudentId,studentName,fathersName,course,branch,year FROM returnBook";
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery();
+            jTable2.setModel(DbUtils.resultSetToTableModel(rs));
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
