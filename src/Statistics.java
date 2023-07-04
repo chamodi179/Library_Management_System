@@ -52,6 +52,7 @@ public class Statistics extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        backbn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -100,10 +101,26 @@ public class Statistics extends javax.swing.JFrame {
 
         jPanel4.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 920, 280));
 
+        backbn.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
+        backbn.setText("Back");
+        backbn.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Documents\\java-Project\\LibrabyManagementSystem\\images\\back.png")); // NOI18N
+        backbn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backbnActionPerformed(evt);
+            }
+        });
+        jPanel4.add(backbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 620, -1, -1));
+
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 660));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void backbnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbnActionPerformed
+        setVisible(false);
+        Home homePage = new Home();
+        homePage.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_backbnActionPerformed
 
     
     public static void main(String args[]) {
@@ -116,6 +133,7 @@ public class Statistics extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backbn;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
